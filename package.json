@@ -1,0 +1,38 @@
+{
+  "name": "valyriantranslatorbot",
+  "version": "1.0.0",
+  "description": "Telegram bot to translate text to mimimimi valyrian ;)",
+  "main": "valyriantranslatorbot.js",
+  "scripts": {
+    "start": "node valyriantranslatorbot.js",
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test:watch": "npm run test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "valyrian",
+    "translator",
+    "telegram",
+    "bot"
+  ],
+  "author": "Adrián Gonzalo (agm-dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "telebot": "^1.0.7"
+  }
+}
